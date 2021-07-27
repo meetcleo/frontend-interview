@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { CurrencyCode } from "./types";
-import { convert } from "./utils";
+import axios from "axios";
+import { ConvertResponse } from "./types";
 
 function App() {
   const [amount, setAmount] = useState("");
@@ -9,14 +9,23 @@ function App() {
   const [convertedAmount, setConvertedAmount] = useState("");
 
   const convertAmount = async () => {
-    const result = await convert(
-      fromCurrency as keyof CurrencyCode,
-      toCurrency as keyof CurrencyCode,
-      parseFloat(amount)
+    const result = await axios.get<ConvertResponse>(
+      "http://localhost:3002/convert", {
+        params: {
+          from: fromCurrency,
+          to: toCurrency,
+          amount
+        }
+      }
     );
 
-    setConvertedAmount(result.toString());
+    result && setConvertedAmount(result.data.convertedAmount.toString());
   };
+
+  const swap = () => {
+    setFromCurrency(toCurrency);
+    setToCurrency(fromCurrency);
+  }
 
   return (
     <div className="App">
@@ -48,6 +57,7 @@ function App() {
         <br />
         <br />
         <button onClick={convertAmount}>Convert</button>
+        <button onClick={swap}>Swap</button>
         <span>{convertedAmount}</span>
       </div>
     </div>
