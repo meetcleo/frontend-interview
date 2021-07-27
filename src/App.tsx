@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { ConvertResponse } from "./types";
+import styled from "styled-components";
+import Input from "./components/Input";
+import Button from './components/Button';
 
 function App() {
   const [amount, setAmount] = useState("");
@@ -28,40 +31,59 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Cleo FE Pairing</p>
-      </header>
+    <div>
+      <StyledHeader>
+        <p>Currency Converter</p>
+      </StyledHeader>
 
-      <div>
-        <label htmlFor="from">From</label>&nbsp;{" "}
-        <input
-          type="text"
-          onChange={(e) => setFromCurrency(e.target.value)}
-          value={fromCurrency}
-        />
-        <br />
-        <label htmlFor="to">To</label>&nbsp;{" "}
-        <input
-          type="text"
-          onChange={(e) => setToCurrency(e.target.value)}
-          value={toCurrency}
-        />
-        <br />
-        <label htmlFor="amount">Amount</label>&nbsp;{" "}
-        <input
-          type="text"
-          onChange={(e) => setAmount(e.target.value)}
-          value={amount}
-        />
-        <br />
-        <br />
-        <button onClick={convertAmount}>Convert</button>
-        <button onClick={swap}>Swap</button>
-        <span>{convertedAmount}</span>
-      </div>
+      <ContentContainer>
+        <ConverterContainer>
+          <Input
+            label="Amount"
+            onChange={(value) => setAmount(value)}
+            value={amount}
+          />
+          <Input
+            label="From"
+            onChange={(value) => setFromCurrency(value)}
+            value={fromCurrency}
+          />
+
+          <Input
+            label="To"
+            onChange={(value) => setToCurrency(value)}
+            value={toCurrency}
+          />
+          <br />
+          <Button onClick={convertAmount}>Convert</Button>
+          <span>{convertedAmount}</span>
+        </ConverterContainer>
+      </ContentContainer>
     </div>
   );
 }
 
+const StyledHeader = styled.header`
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0815ff;
+  color: white;
+`;
+
+const ContentContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ConverterContainer = styled.div`
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 400px;
+  margin-top: -50px;
+  background-color: white;
+  padding: 36px 30px;
+`;
 export default App;
