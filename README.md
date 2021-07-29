@@ -47,10 +47,42 @@ $ yarn start
 
 ### Run the API
 
-Runs the local API with database
+Runs the local API from a static database (currency values are not real time)
 
 ```console
 $ yarn api
+```
+
+There are three endpoints made available for this task. Each is described bellow:
+
+#### Currencies
+
+Retrieve a list of all available currencies
+
+```
+GET - http://localhost:3002/currencies
+```
+
+#### Rates
+
+Retrieve a list of all available currencies with rates
+
+```
+GET - http://localhost:3002/rates
+```
+
+Retrieve a single currency and its rates
+
+```
+GET - http://localhost:3002/rates/{CURRENCY_CODE}
+```
+
+#### Convert
+
+Convert an amount from one currency to another
+
+```
+http://localhost:3002/convert?from={CURRENCY_CODE}&to={CURRENCY_CODE}&amount={AMOUNT}
 ```
 
 ### Testing
