@@ -63,6 +63,22 @@ Retrieve a list of all available currencies
 GET - http://localhost:3002/currencies
 ```
 
+The currencies available as part of this test are:
+
+```json
+{
+  "AUD": "Australian Dollar",
+  "CAD": "Canadian Dollar",
+  "CHF": "Swiss Franc",
+  "CNY": "Chinese Yuan",
+  "EUR": "Euro",
+  "GBP": "British Pound Sterling",
+  "RUB": "Russian Ruble",
+  "THB": "Thai Baht",
+  "USD": "United States Dollar"
+}
+```
+
 #### Rates
 
 Retrieve a list of all available currencies with rates
