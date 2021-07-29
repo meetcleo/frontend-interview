@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
-import { ConvertResponse } from "./types";
 import styled from "styled-components";
-import Input from "./components/Input";
-import Button from './components/Button';
 
 function App() {
   const [amount, setAmount] = useState("");
@@ -12,23 +8,8 @@ function App() {
   const [convertedAmount, setConvertedAmount] = useState("");
 
   const convertAmount = async () => {
-    const result = await axios.get<ConvertResponse>(
-      "http://localhost:3002/convert", {
-        params: {
-          from: fromCurrency,
-          to: toCurrency,
-          amount
-        }
-      }
-    );
-
-    result && setConvertedAmount(result.data.convertedAmount.toString());
+    console.log("Implement conversion here");
   };
-
-  const swap = () => {
-    setFromCurrency(toCurrency);
-    setToCurrency(fromCurrency);
-  }
 
   return (
     <div>
@@ -38,24 +19,18 @@ function App() {
 
       <ContentContainer>
         <ConverterContainer>
-          <Input
-            label="Amount"
-            onChange={(value) => setAmount(value)}
-            value={amount}
-          />
-          <Input
-            label="From"
-            onChange={(value) => setFromCurrency(value)}
+          <input onChange={(e) => setAmount(e.target.value)} value={amount} />
+          <input
+            onChange={(e) => setFromCurrency(e.target.value)}
             value={fromCurrency}
           />
-
-          <Input
-            label="To"
-            onChange={(value) => setToCurrency(value)}
-            value={toCurrency}
+          <input
+            onChange={(e) => setToCurrency(e.target.value)}
+            value={amount}
           />
+
           <br />
-          <Button onClick={convertAmount}>Convert</Button>
+          <button onClick={convertAmount}>Convert</button>
           <span>{convertedAmount}</span>
         </ConverterContainer>
       </ContentContainer>
