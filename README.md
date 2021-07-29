@@ -95,8 +95,9 @@ $ yarn test
 
 ## Notes
 
+- We are big fans of tested code
+- Be mindful of your code structure, you are completely free to make adjustments as you wish
 - We are about good vibes and working as a team to solve things
 - Remember to think out loud so you and your interviewer are aligned
-- Feel free to Google something if you're unsure. Also remember you can ask your interviewer
-- Ask questions and clarify things if you need to
+- Feel free to Google something if you're unsure during the session. Also remember you can ask your interviewer any questions you may have
 - Whilst finishing the task is great, we're more keen to see how you work and solve problems
