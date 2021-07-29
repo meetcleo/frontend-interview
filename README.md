@@ -23,7 +23,9 @@ This is a React application and as such, you'll need to have installed on your m
 2. Git (plus a Github account)
 3. Yarn or NPM
 
-With the above installed, you'll need to fork this Github repo locally to your machine.
+With the above installed, you'll need to fork this Github repo locally to your machine. We also recommend you come prepared with your preferred IDE set up to your liking in order to allow us to start straight away.
+
+## Running the application
 
 There are various commands already available for you to run:
 
