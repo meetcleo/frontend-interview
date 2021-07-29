@@ -22,7 +22,6 @@ This is a React application and as such, you'll need to have installed on your m
 1. Node.js
 2. Git (plus a Github account)
 3. Yarn or NPM
-4. ...
 
 With the above installed, you'll need to fork this Github repo locally to your machine.
 
