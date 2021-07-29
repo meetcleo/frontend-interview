@@ -19,7 +19,6 @@ function App() {
         <Logo title="Cleo" />
         <p>Currency Converter</p>
       </StyledHeader>
-
       <ContentContainer>
         <ConverterContainer>
           <input onChange={(e) => setAmount(e.target.value)} value={amount} />
@@ -31,8 +30,6 @@ function App() {
             onChange={(e) => setToCurrency(e.target.value)}
             value={amount}
           />
-
-          <br />
           <button onClick={convertAmount}>Convert</button>
           <span>{convertedAmount}</span>
         </ConverterContainer>
