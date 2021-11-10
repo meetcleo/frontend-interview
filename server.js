@@ -40,8 +40,15 @@ server.get('/rates/:currencyCode', (req, res) => {
   const currencyWithRates = rates.find(rate => rate.base === sanitisedCurrencyCode);
 
   if (!currencyWithRates) console.error(`⚠️  Could not find currency: ${sanitisedCurrencyCode}`);
+  const copiedRates = { ...currencyWithRates.rates }
 
-  res.jsonp(currencyWithRates)
+  Object.entries(currencyWithRates.rates).map(([key, value]) => {
+    if (key !== currencyCode) {
+      copiedRates[key] = parseFloat((Math.random() * ((value + 1) - value) + value).toPrecision(8));
+    }
+    return copiedRates[key];
+  })
+  res.jsonp({ ...currencyWithRates, rates: copiedRates })
 });
 
 server.use(router)
