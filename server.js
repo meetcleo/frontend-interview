@@ -63,7 +63,7 @@ const app = server.listen(3002, () => {
   | |____| |____| |___| |__| |
    \\_____|______|______\\____/ 
 
-  ----  Graduate FE Test  ----
+  ----  Frontend Test  ----
 
 `.brightBlue,
 ' Resources'.bold,

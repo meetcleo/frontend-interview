@@ -1,4 +1,4 @@
-# Cleo Graduate Frontend Interview
+# Cleo Frontend Interview
 
 ## Overview
 
@@ -9,7 +9,7 @@ Today we'll be pairing on a React application that allows users to convert curre
 3. Fix some bugs from the project board
 4. Fix any bugs we come across
 
-The teams project manager has set up a project board for us to track various features/bugs, which can be found [HERE](https://github.com/meetcleo/fe-graduate-interview/projects/1).
+The teams project manager has set up a project board for us to track various features/bugs, which can be found [HERE](https://github.com/meetcleo/frontend-interview/projects/1).
 
 Each card on the project board has information about it's requirements, so take a moment to familiarise yourself with them and feel free to ask questions. Our goal is to work through the cards on that project board together in whichever order you feel works best.
 
@@ -18,7 +18,7 @@ We have also been provided a design (expand below) to reference during our devel
 <details>
   <summary>UI design reference</summary>
   
-  ![alt text](https://github.com/meetcleo/fe-graduate-interview/blob/main/ui-design.jpg?raw=true "UI design reference")
+  ![alt text](https://github.com/meetcleo/frontend-interview/blob/main/ui-design.jpg?raw=true "UI design reference")
 </details>
 
 It's important to note that whilst there may be bugs on that project board, not all may have been reported yet. As such, we can look to fix anything we find during our session.
