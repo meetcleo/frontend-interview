@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { ReactComponent as Logo } from './assets/logo.svg';
+import Input from "./components/Input";
 import { palette } from './styles';
 
 function App() {
@@ -21,14 +22,16 @@ function App() {
       </StyledHeader>
       <ContentContainer>
         <ConverterContainer>
-          <input onChange={(e) => setAmount(e.target.value)} value={amount} />
-          <input
-            onChange={(e) => setFromCurrency(e.target.value)}
+          <Input label="Amount" onChange={(value) => setAmount(value)} value={amount} />
+          <Input
+            label="From Currency"
+            onChange={(value) => setFromCurrency(value)}
             value={fromCurrency}
           />
-          <input
-            onChange={(e) => setToCurrency(e.target.value)}
-            value={amount}
+          <Input
+            label="To Currency"
+            onChange={(value) => setToCurrency(value)}
+            value={toCurrency}
           />
           <button onClick={convertAmount}>Convert</button>
           <span>{convertedAmount}</span>
