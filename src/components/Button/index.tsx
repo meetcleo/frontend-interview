@@ -2,12 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 
 type Props = {
-  children: React.ReactNode;
+  label: string;
   onClick: () => void;
+  isDisabled?: boolean;
 };
 
-const Button: React.FC<Props> = ({ children, onClick }) => {
-  return <StyledButton onClick={onClick}>{children}</StyledButton>;
+const Button: React.FC<Props> = ({ label, onClick, isDisabled }) => {
+  return (
+    <StyledButton onClick={onClick} disabled={isDisabled}>
+      {label}
+    </StyledButton>
+  );
 };
 
 const StyledButton = styled.button`

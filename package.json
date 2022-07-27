@@ -24,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test  --watchAll --testMatch '**/src/**/spec.{ts,tsx}'",
     "eject": "react-scripts eject",
     "api": "nodemon server.js --quiet",
     "prettier:check": "prettier --check .",
@@ -49,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.3.0",
     "@types/styled-components": "^5.1.25",
     "prettier": "2.7.1"
   }
