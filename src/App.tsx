@@ -12,8 +12,6 @@ function App() {
 
   const convertAmount = async () => {
     console.log('Implement conversion here');
-
-    const foo: number = '123';
   };
 
   return (
