@@ -1,17 +1,19 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+import { useState } from 'react';
+import styled from 'styled-components';
 import { ReactComponent as Logo } from './assets/logo.svg';
-import Input from "./components/Input";
+import Input from './components/Input';
 import { palette } from './styles';
 
 function App() {
-  const [amount, setAmount] = useState("");
-  const [fromCurrency, setFromCurrency] = useState("");
-  const [toCurrency, setToCurrency] = useState("");
-  const [convertedAmount, setConvertedAmount] = useState("");
+  const [amount, setAmount] = useState('');
+  const [fromCurrency, setFromCurrency] = useState('');
+  const [toCurrency, setToCurrency] = useState('');
+  const [convertedAmount, setConvertedAmount] = useState('');
 
   const convertAmount = async () => {
-    console.log("Implement conversion here");
+    console.log('Implement conversion here');
+
+    const foo: number = '123';
   };
 
   return (
@@ -23,16 +25,8 @@ function App() {
       <ContentContainer>
         <ConverterContainer>
           <Input label="Amount" onChange={(value) => setAmount(value)} value={amount} />
-          <Input
-            label="From Currency"
-            onChange={(value) => setFromCurrency(value)}
-            value={fromCurrency}
-          />
-          <Input
-            label="To Currency"
-            onChange={(value) => setToCurrency(value)}
-            value={toCurrency}
-          />
+          <Input label="From Currency" onChange={(value) => setFromCurrency(value)} value={fromCurrency} />
+          <Input label="To Currency" onChange={(value) => setToCurrency(value)} value={toCurrency} />
           <button onClick={convertAmount}>Convert</button>
           <span>{convertedAmount}</span>
         </ConverterContainer>
