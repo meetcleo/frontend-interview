@@ -2,16 +2,15 @@
 
 ## Overview
 
-Today we'll be pairing on a React application that allows users to convert currencies from one unit to another, based on a selection. The application itself has already been started by another team and our goal would be to:
+We'll be pairing on a React application that allows users to convert currencies from one unit to another, based on a selection. The application itself has already been started by another team and our goal would be to:
 
-1. Add some missing features from the project board
-2. Add tests for features we add
-3. Fix some bugs from the project board
-4. Fix any bugs we come across
+1. Work on some features/enhancements/bugs together from the project board
+2. Add tests for features we add (we'll dedicate some time to this)
+3. Fix any bugs we come across
 
-The teams project manager has set up a project board for us to track various features/bugs, which can be found [HERE](https://github.com/meetcleo/frontend-interview/projects/1).
+The teams project manager has set up a project board for us to track various features/enhancements/bugs, which can be found [HERE](https://github.com/meetcleo/frontend-interview/projects/1).
 
-Each card on the project board has information about it's requirements, so take a moment to familiarise yourself with them and feel free to ask questions. Our goal is to work through the cards on that project board together in whichever order you feel works best.
+Each card on the project board has information about it's requirements, so take a moment to familiarise yourself with them and feel free to ask questions. Our goal is to work through the cards on that project board together in whichever order you feel works best, however they have been put in a rough logical order already.
 
 We have also been provided a design (expand below) to reference during our development. We should aim to stay close to this, but we have some freedom to change things where needed.
 
@@ -114,6 +113,6 @@ $ yarn test
 - We are big fans of tested code
 - Be mindful of your code structure, you are completely free to make adjustments as you wish
 - We are about good vibes and working as a team to solve things
-- Remember to think out loud so you and your interviewer are aligned
-- Feel free to Google something if you're unsure during the session. Also remember you can ask your interviewer any questions you may have
-- Whilst finishing the task is great, we're more keen to see how you work and solve problems
+- Remember to think out loud so you and your interviewer(s) are aligned
+- Feel free to Google something if you're unsure during the session. Also remember you can ask your interviewer(s) any questions you may have
+- We're not expecting to finish all the cards on the project board. We're more keen to see how you work and solve problems
