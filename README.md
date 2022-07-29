@@ -115,4 +115,4 @@ $ yarn test
 - We are about good vibes and working as a team to solve things
 - Remember to think out loud so you and your interviewer(s) are aligned
 - Feel free to Google something if you're unsure during the session. Also remember you can ask your interviewer(s) any questions you may have
-- We're not expecting to finish all the cards on the project board. We're more keen to see how you work and solve problems
+- We are not expecting to finish all the cards on the project board. We are more keen to see how you work, solve problems and communicate
