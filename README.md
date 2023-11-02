@@ -97,7 +97,7 @@ GET - http://localhost:3002/rates/{CURRENCY_CODE}
 Convert an amount from one currency to another
 
 ```
-http://localhost:3002/convert?from={CURRENCY_CODE}&to={CURRENCY_CODE}&amount={AMOUNT}
+GET - http://localhost:3002/convert?from={CURRENCY_CODE}&to={CURRENCY_CODE}&amount={AMOUNT}
 ```
 
 ### Testing
