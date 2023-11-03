@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start --openssl-legacy-provider",
     "build": "react-scripts build",
     "test": "react-scripts test  --watchAll --testMatch '**/src/**/spec.{ts,tsx}'",
     "eject": "react-scripts eject",
@@ -34,10 +34,11 @@
     "@testing-library/user-event": "^14.5.1",
     "@trivago/prettier-plugin-sort-imports": "^4.2.1",
     "@types/styled-components": "^5.1.29",
+    "colors": "^1.4.0",
     "prettier": "3.0.3"
   },
   "engines": {
-    "node": ">=16.0.0 <17.0.0"
+    "node": ">=16.0.0"
   },
   "eslintConfig": {
     "extends": [
