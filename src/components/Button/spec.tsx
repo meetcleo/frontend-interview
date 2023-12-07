@@ -31,11 +31,11 @@ describe('<Button />', () => {
     const button = screen.getByRole('button');
 
     await fireEvent.click(button);
-    expect(mockOnClick).toBeCalledTimes(0);
+    expect(mockOnClick).toHaveBeenCalledTimes(0);
 
     rerender(<Button {...props} isDisabled={false} />);
 
     await fireEvent.click(button);
-    expect(mockOnClick).toBeCalledTimes(1);
+    expect(mockOnClick).toHaveBeenCalledTimes(1);
   });
 });

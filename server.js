@@ -1,4 +1,4 @@
-const colors = require('colors');
+require('colors');
 const jsonServer = require('json-server');
 const server = jsonServer.create();
 const router = jsonServer.router('db.json');
@@ -61,9 +61,9 @@ const app = server.listen(3002, () => {
   | |    | |    | |__ | |  | |
   | |    | |    |  __|| |  | |
   | |____| |____| |___| |__| |
-   \\_____|______|______\\____/ 
+   \\_____|______|______\\____/
 
-  ----  Frontend Test  ----
+  -----  Frontend Test  -----
 
 `.brightBlue,
     ' Resources'.bold,
