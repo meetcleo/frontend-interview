@@ -37,6 +37,11 @@
     "colors": "^1.4.0",
     "prettier": "3.0.3"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "^axios$": "axios/dist/node/axios.cjs"
+    }
+  },
   "engines": {
     "node": ">=16.0.0"
   },
