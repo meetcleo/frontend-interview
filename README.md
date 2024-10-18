@@ -4,11 +4,11 @@
 
 We'll be pairing on a React application that allows users to convert currencies from one unit to another, based on a selection. The application itself has already been started by another team and our goal would be to:
 
-1. Work on some features/enhancements/bugs together as per the requirements documented on the [project board](https://github.com/meetcleo/frontend-interview/projects/1), from both a functional and UX perspective
+1. Work on some features/enhancements/bugs together as per the requirements documented on the [project board](https://github.com/orgs/meetcleo/projects/8), from both a functional and UX perspective
 2. Add tests for features and functionality we add
 3. Fix any bugs we come across
 
-The teams project manager has set up a project board for us to track various features/enhancements/bugs, which can be found [HERE](https://github.com/meetcleo/frontend-interview/projects/1).
+The teams project manager has set up a project board for us to track various features/enhancements/bugs, which can be found [HERE](https://github.com/orgs/meetcleo/projects/8).
 
 Each card on the project board has information about it's requirements, so take a moment to familiarise yourself with them and feel free to ask questions. Our goal is to work through the cards on that project board together in whichever order you feel works best, however they have been put in a rough logical order already.
 
