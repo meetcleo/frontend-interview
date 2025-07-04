@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { palette } from '../styles';
 
 type InputProps = {
   label?: string;
@@ -22,6 +23,7 @@ const Container = styled.div`
 `;
 
 const StyledLabel = styled.label`
+  color: ${palette.primary};
   font-weight: 600;
   margin: 12px 0 8px;
 `;

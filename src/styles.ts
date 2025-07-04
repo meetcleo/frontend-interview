@@ -1,9 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const palette = {
-  black: '#000000',
   white: '#ffffff',
-  blue: '#341cff',
+  primary: '#47201C',
+  lightBackground: '#F8F6F2',
+  border: '#F0EDEA',
+  secondary: '#846A67',
 };
 
 export const GlobalStyles = createGlobalStyle`
