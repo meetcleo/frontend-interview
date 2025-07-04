@@ -23,7 +23,7 @@ const Container = styled.div`
 `;
 
 const StyledLabel = styled.label`
-  color: ${palette.brown};
+  color: ${palette.primary};
   font-weight: 600;
   margin: 12px 0 8px;
 `;

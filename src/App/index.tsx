@@ -40,7 +40,7 @@ const StyledHeader = styled.header`
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  background-color: ${palette.brown};
+  background-color: ${palette.primary};
   color: ${palette.white};
 `;
 

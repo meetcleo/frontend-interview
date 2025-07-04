@@ -17,7 +17,7 @@ const Button: React.FC<Props> = ({ label, onClick, isDisabled }) => {
 };
 
 const StyledButton = styled.button`
-  background-color: ${palette.brown};
+  background-color: ${palette.primary};
   padding: 12px 8px;
   width: 100%;
   border-radius: 4px;
