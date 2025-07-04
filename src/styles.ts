@@ -1,9 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const palette = {
-  black: '#000000',
   white: '#ffffff',
-  blue: '#341cff',
+  brown: '#47201C',
 };
 
 export const GlobalStyles = createGlobalStyle`

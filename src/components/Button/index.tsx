@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { palette } from '../../styles';
 
 type Props = {
   label: string;
@@ -16,7 +17,7 @@ const Button: React.FC<Props> = ({ label, onClick, isDisabled }) => {
 };
 
 const StyledButton = styled.button`
-  background-color: #0815ff;
+  background-color: ${palette.brown};
   padding: 12px 8px;
   width: 100%;
   border-radius: 4px;
