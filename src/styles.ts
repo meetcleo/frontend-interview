@@ -2,7 +2,10 @@ import { createGlobalStyle } from 'styled-components';
 
 export const palette = {
   white: '#ffffff',
-  brown: '#47201C',
+  primary: '#47201C',
+  lightBackground: '#F8F6F2',
+  border: '#F0EDEA',
+  secondary: '#846A67',
 };
 
 export const GlobalStyles = createGlobalStyle`
