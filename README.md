@@ -16,8 +16,9 @@ We have also been provided a design (expand below) to reference during our devel
 
 <details>
   <summary>UI design reference</summary>
+  <img width="402" height="833" alt="Screenshot 2025-07-11 at 14 51 52" src="https://github.com/user-attachments/assets/8c623ee2-455c-483b-8eeb-45fdff147190" />
+
   
-  ![alt text](https://github.com/meetcleo/frontend-interview/blob/main/ui-design.jpg?raw=true "UI design reference")
 </details>
 
 It's important to note that whilst there may be bugs on that project board, not all may have been reported yet. As such, we can look to fix anything we find during our session.
