@@ -16,7 +16,7 @@ We have also been provided a design (expand below) to reference during our devel
 
 <details>
   <summary>UI design reference</summary>
-  <img width="402" height="833" alt="Screenshot 2025-07-11 at 14 51 52" src="https://github.com/user-attachments/assets/8c623ee2-455c-483b-8eeb-45fdff147190" />
+<img width="388" height="808" alt="Screenshot 2025-07-23 at 15 48 10" src="https://github.com/user-attachments/assets/1a3e2241-b089-4f78-b3c4-c0a6ac1ff4e9" />
 
   
 </details>
