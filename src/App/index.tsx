@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { ReactComponent as Logo } from '../assets/logo.svg';
 import Input from '../components/Input';
 import { palette } from '../styles';
-import Button from '../components/Button';
 
 function App() {
   const [amount, setAmount] = useState('');
