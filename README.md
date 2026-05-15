@@ -16,7 +16,7 @@ We have also been provided a design (expand below) to reference during our devel
 
 <details>
   <summary>UI design reference</summary>
-<img width="388" height="808" alt="Screenshot 2025-07-23 at 15 48 10" src="https://raw.githubusercontent.com/meetcleo/frontend-interview/refs/heads/main/ui-design.png" />
+<img width="600" alt="UI design reference" src="https://raw.githubusercontent.com/meetcleo/frontend-interview/refs/heads/main/ui-design.png" />
   
 </details>
 
