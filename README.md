@@ -27,11 +27,22 @@ It's important to note that whilst there may be bugs on that project board, not 
 
 This is a React application and as such, you'll need to have installed on your machine a few dependencies:
 
-1. Node.js (>=16.0.0 <17.0.0)
+1. Node.js (>=16.0.0)
 2. Git
-3. Yarn or NPM
+3. Yarn
 
 With the above installed, you'll need to fork this Github repo locally to your machine. We also recommend you come prepared with your preferred IDE set up to your liking in order to allow us to start straight away.
+
+## Installing dependencies
+
+This project uses Yarn 1 (Classic). To ensure the correct version is used regardless of your global Yarn install, enable Corepack first:
+
+```console
+$ corepack enable
+$ yarn install
+```
+
+> Corepack ships with Node.js 16.9+ so no separate install is needed.
 
 ## Running the application
 

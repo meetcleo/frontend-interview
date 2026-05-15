@@ -42,6 +42,7 @@
       "^axios$": "axios/dist/node/axios.cjs"
     }
   },
+  "packageManager": "yarn@1.22.22",
   "engines": {
     "node": ">=16.0.0"
   },
