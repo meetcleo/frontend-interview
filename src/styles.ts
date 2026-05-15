@@ -4,7 +4,7 @@ export const palette = {
   white: '#ffffff',
   primary: '#47201C',
   lightBackground: '#F8F6F2',
-  border: '#F0EDEA',
+  border: '#0E06051A',
   secondary: '#846A67',
 };
 
@@ -12,5 +12,6 @@ export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: ${palette.lightBackground};
   }
 `;

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { ReactComponent as Logo } from '../assets/logo.svg';
 import Input from '../components/Input';
 import { palette } from '../styles';
+import Button from '../components/Button';
 
 function App() {
   const [amount, setAmount] = useState('');
@@ -18,7 +19,7 @@ function App() {
   return (
     <div>
       <StyledHeader>
-        <Logo title="Cleo" />
+        <Logo title="Cleo" height={60} />
         <p>Currency Converter</p>
       </StyledHeader>
       <ContentContainer>
@@ -42,6 +43,7 @@ const StyledHeader = styled.header`
   justify-content: center;
   background-color: ${palette.primary};
   color: ${palette.white};
+  font-size: 1.2rem;
 `;
 
 const ContentContainer = styled.div`
@@ -51,10 +53,8 @@ const ContentContainer = styled.div`
 `;
 
 const ConverterContainer = styled.div`
-  border-radius: 8px;
-  box-shadow:
-    0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  border: 1px solid ${palette.border};
   width: 400px;
   margin-top: -50px;
   background-color: ${palette.white};

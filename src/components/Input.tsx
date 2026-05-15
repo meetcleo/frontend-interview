@@ -30,8 +30,8 @@ const StyledLabel = styled.label`
 
 const StyledInput = styled.input`
   padding: 16px 8px;
-  border: solid 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border: solid 1px ${palette.border};
+  border-radius: 12px;
 `;
 
 export default Input;

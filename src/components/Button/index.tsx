@@ -18,12 +18,13 @@ const Button: React.FC<Props> = ({ label, onClick, isDisabled }) => {
 
 const StyledButton = styled.button`
   background-color: ${palette.primary};
-  padding: 12px 8px;
+  padding: 16px 8px;
   width: 100%;
-  border-radius: 4px;
+  border-radius: 12px;
   border: 0;
   color: white;
   font-weight: 500;
+  font-size: 1rem;
 `;
 
 export default Button;
