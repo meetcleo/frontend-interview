@@ -29,6 +29,8 @@ const StyledLabel = styled.label`
 `;
 
 const StyledInput = styled.input`
+  font-size: 1rem;
+  font-family: inherit;
   padding: 16px 8px;
   border: solid 1px ${palette.border};
   border-radius: 12px;
